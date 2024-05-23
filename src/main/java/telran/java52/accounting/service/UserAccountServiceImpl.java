@@ -24,6 +24,7 @@ public class UserAccountServiceImpl implements UserAccountService, CommandLineRu
 	final UserAccountRepository userAccountRepository;
 	final ModelMapper modelMapper;
 
+	
 	@Override
 	public UserDto register(UserRegisterDto userRegisterDto) {
 		if (userAccountRepository.existsById(userRegisterDto.getLogin())) {
